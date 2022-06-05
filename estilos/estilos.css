@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(217, 189, 219);
+    margin: 0;
+    font-family: "poppins";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "nav" 
+                         "contentText"
+                         "contentImg"
+                         "footer";
+    width: 100%;
+    height: 100%;
+
+}
+
+
+header ul li {
+        display: inline-block;
+    }
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(157, 94, 177);
+    padding: 10px;
+    grid-area: nav;
+}
+
+footer{
+    background-color: rgb(191, 114, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    grid-area: footer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.navBar__list_contain{
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    height: 20px;
+    margin-right: 15px;
+}
+.navBar__contain{
+    margin-left: 15px;
+    text-align: center;
+}
+
+.navBar__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.navBar__link{
+    font-size: 20px;
+    color: rgb(151, 233, 176);
+    font-weight: bold;
+}
+
+.contentText{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    grid-area: contentText
+}
+
+.title{
+    font-size: 50px;
+}
+
+.footer__redes{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+}
+
+.footerContain{
+    margin: 15px 0 2px 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.imagFest{
+    width: 400px;
+    height: 400px;
+}
+
+.formContac{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContac-button{
+    margin-top: 10px;
+}
+.contentImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: contentImg;
+}
+.contentImg_gemas{
+    margin-bottom: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.contentImg_video{
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+}
+
+
+/* seccion nosotras */
+
+.contain_body{
+    align-items: center;
+    text-align: center;
+}
+
+.contain_body_imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.contain_body_img{
+    margin: 4px;
+}
+
+.reservas_img{
+    width: 600px;
+    height: 600px;
+}
+
+@media (max-width: 1375px) {    
+    body{
+    background-color: rgb(217, 189, 219);
+    margin: 0;
+    font-family: "poppins";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(157, 94, 177);
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}   
+
+
+@media (max-width: 950px){
+    body{
+        background-color: rgb(217, 189, 219);
+        margin: 0;
+        font-family: "poppins";
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(157, 94, 177);
+        margin: 0;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentImg_video{
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+    }
+    .reservas_img{
+        width: 500px;
+        height: 500px;
+    }
+}   
+@media (max-width: 730px){
+    body{
+        background-color: rgb(217, 189, 219);
+        margin: 0;
+        font-family: "poppins";
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(157, 94, 177);
+        margin: 0;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentImg_video{
+        width: 550px;
+        height: 350px;
+        margin: 10px;
+    }
+    .reservas_img{
+        width: 400px;
+        height: 400px;
+    }
+}   
+
+@media (max-width: 500px){
+    body{
+        background-color: rgb(217, 189, 219);
+        margin: 0;
+        font-family: "poppins";
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(157, 94, 177);
+        margin: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentImg_video{
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+    }
+    .reservas_img{
+        width: 300px;
+        height: 300px;
+    }
+}   
