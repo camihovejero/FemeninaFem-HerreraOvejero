@@ -31,13 +31,13 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to top, #d9bddb, #5a0153);
+    background: linear-gradient(to top, #c29dc5, #b139a76c);
     padding: 10px;
     grid-area: nav;
 }
 
 footer{
-    background: linear-gradient(to bottom, #d9bddb, #5a0153);
+    background: linear-gradient(to bottom , #c29dc5, #b139a76c);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,10 @@ p{
 
 .title{
     font-size: 50px;
+    font-weight: bolder;
+    color: black; 
 }
+
 
 .footer__redes{
     width: 40px;
@@ -112,6 +115,8 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 5%;
+
 }
 
 .formContac-button{
@@ -161,6 +166,25 @@ p{
     height: 600px;
 }
 
+
+#femenina{
+    font-weight: bolder;
+    color: black; 
+}
+
+#glitter{
+    color: black;
+}
+
+#femeninaDos{
+    font-weight: bolder;
+    color: black; 
+}
+#femeninaTres{
+    font-weight: bolder;
+    color: black; 
+}
+
 @media (max-width: 1375px) {    
     body{
     background-color: rgb(217, 189, 219);
@@ -183,6 +207,9 @@ main{
     align-items: center;
 }
 
+}
+#btn-contacto{
+    margin-top: 10px;
 }   
 
 
