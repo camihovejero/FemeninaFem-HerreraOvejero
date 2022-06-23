@@ -1,0 +1,23 @@
+$pink-background:  rgb(217, 189, 219);
+$pink-gradient-background: #c29dc5;
+$purple-gradient-background: #b139a76c;
+$black: black;
+
+@mixin img ($width, $height) {
+    width: $width;
+    height: $height;
+};
+
+
+$lorem:(
+    1: red,
+    2: green,
+    3: blue,
+    4: white,
+);
+
+@each $red, $color in $lorem {
+    .lorem-#{$red}{
+        color: $color
+    }
+};
