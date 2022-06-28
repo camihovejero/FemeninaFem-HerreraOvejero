@@ -7,17 +7,3 @@ $black: black;
     width: $width;
     height: $height;
 };
-
-
-$lorem:(
-    1: red,
-    2: green,
-    3: blue,
-    4: white,
-);
-
-@each $red, $color in $lorem {
-    .lorem-#{$red}{
-        color: $color
-    }
-};
