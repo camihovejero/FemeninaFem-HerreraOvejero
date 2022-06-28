@@ -13,6 +13,32 @@
           flex-direction: column;
 }
 
+.containServicio {
+  height: 75rem;
+}
+
+.servicioList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+.servicioList li {
+  margin: 0 15px;
+}
+
+.servicioList p {
+  text-align: left;
+}
+
+.containReservas {
+  height: 75rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +92,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60rem;
+  height: 65rem;
 }
 
 main .contentText {
@@ -96,6 +122,26 @@ main p {
 main img {
   width: 600px;
   height: 600px;
+}
+
+#containNosotras {
+  height: 75rem;
+}
+
+#containNosotras .nosotrasImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#containNosotras .nosotrasImg img {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 footer {
@@ -253,6 +299,23 @@ footer img {
     width: 400px;
     height: 400px;
   }
+  #containNosotras {
+    height: 65rem;
+  }
+  #containNosotras .nosotrasImg {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  #containNosotras .nosotrasImg img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 5px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -296,6 +359,9 @@ footer img {
   .reservas_img {
     width: 300px;
     height: 300px;
+  }
+  #containNosotras {
+    height: 68rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

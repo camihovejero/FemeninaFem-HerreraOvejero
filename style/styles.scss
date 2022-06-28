@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import '../secciones/contacto/style/contacto.scss';
-@import './variables.scss';
+@import '../secciones/contacto/style/contacto';
+@import '../secciones/servicios/styles/servicio';
+@import '../secciones/reservas/styles/reservas';
+@import './variables';
 
 * {
     margin: 0;
@@ -43,7 +45,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60rem;
+    height: 65rem;
+
     .contentText {
         text-align: center;
         color: $black;
@@ -64,7 +67,6 @@ main {
     p {
         font-size: 15px;
         font-weight: 900;
-
     }
 
     img {
@@ -72,6 +74,20 @@ main {
     }
 }
 
+#containNosotras {
+    height: 75rem;
+    .nosotrasImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        img {
+            @include img(300px, 400px);
+            border-radius: 20px;
+            margin: 5px;
+        }
+    }
+}
 
 footer {
     background: linear-gradient(to bottom, $pink-gradient-background, $purple-gradient-background);
@@ -185,6 +201,20 @@ footer {
         width: 400px;
         height: 400px;
     }
+    #containNosotras {
+        height: 65rem;
+        .nosotrasImg {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+    
+            img {
+                @include img(200px, 200px);
+                border-radius: 20px;
+                margin: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 500px) {
@@ -219,4 +249,9 @@ footer {
         width: 300px;
         height: 300px;
     }
+
+    #containNosotras {
+        height: 68rem;
+    }
+
 }
